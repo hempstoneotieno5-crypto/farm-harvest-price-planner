@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Farm Harvest & Price Planner helps farmers estimate harvest time, check price trends, manage farmer records, and choose the best time to sell."
+    />
+    <title>Farm Harvest & Price Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div>
+            <p class="eyebrow">Full-stack farming planner</p>
+            <h1>Farm Harvest &amp; Price Planner</h1>
+          </div>
+          <a class="ghost-link" href="#auth">Start here</a>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <span class="tag">Farm records, forecasts, weather, and SMS alerts</span>
+            <p class="hero-text">
+              This full-stack project lets farmers register, manage profiles, save
+              planting records, view harvest forecasts, check live weather signals,
+              and prepare SMS alerts through Africa's Talking.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#auth">Create account</a>
+              <a class="secondary-button" href="#planner">Open planner</a>
+            </div>
+          </section>
+
+          <section class="hero-panel glass-card">
+            <div class="panel-header">
+              <p>Quick summary</p>
+              <span id="authStatus">Not signed in</span>
+            </div>
+            <div class="metric-grid">
+              <article>
+                <strong id="hero-harvest-window">Waiting</strong>
+                <span>Crop maturity</span>
+              </article>
+              <article>
+                <strong id="hero-best-price">KES 0</strong>
+                <span>Best expected price</span>
+              </article>
+              <article>
+                <strong id="hero-risk-level">Unknown</strong>
+                <span>Weather risk</span>
+              </article>
+              <article>
+                <strong id="hero-sms-state">Sign in</strong>
+                <span>SMS support</span>
+              </article>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <main>
+        <section class="section-grid" id="auth">
+          <article class="glass-card planner-card">
+            <div class="section-title">
+              <p>Account</p>
+              <h2>Create a farmer account</h2>
+            </div>
+
+            <form id="registerForm" class="planner-form">
+              <label>
+                <span>Full name</span>
+                <input type="text" id="registerName" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" id="registerEmail" required />
+              </label>
+              <label>
+                <span>Phone number</span>
+                <input type="tel" id="registerPhone" placeholder="+2547..." />
+              </label>
+              <label>
+                <span>County</span>
+                <select id="registerCounty" data-counties required></select>
+              </label>
+              <label>
+                <span>Password</span>
+                <input type="password" id="registerPassword" required />
+              </label>
+              <button type="submit" class="primary-button full-width">Register</button>
+            </form>
+          </article>
+
+          <article class="glass-card summary-card">
+            <div class="section-title">
+              <p>Sign in</p>
+              <h2>Access your records</h2>
+            </div>
+
+            <form id="loginForm" class="planner-form compact-form">
+              <label>
+                <span>Email</span>
+                <input type="email" id="loginEmail" required />
+              </label>
+              <label>
+                <span>Password</span>
+                <input type="password" id="loginPassword" required />
+              </label>
+              <button type="submit" class="primary-button full-width">Login</button>
+            </form>
+
+            <p id="authMessage" class="auth-message">Register or sign in to unlock forecasts and records.</p>
+            <button type="button" id="logoutButton" class="secondary-button full-width">Logout</button>
+          </article>
+        </section>
+
+        <section class="section-grid" id="planner">
+          <article class="glass-card planner-card">
+            <div class="section-title">
+              <p>Profile</p>
+              <h2>Farmer profile</h2>
+            </div>
+
+            <form id="profileForm" class="planner-form compact-form">
+              <label>
+                <span>Full name</span>
+                <input type="text" id="farmerName" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" id="farmerEmail" disabled />
+              </label>
+              <label>
+                <span>Phone number</span>
+                <input type="tel" id="farmerPhone" />
+              </label>
+              <label>
+                <span>Home county</span>
+                <select id="farmerCounty" data-counties></select>
+              </label>
+              <button type="submit" class="primary-button full-width">Save profile</button>
+            </form>
+          </article>
+
+          <article class="glass-card summary-card">
+            <div class="section-title">
+              <p>Planting</p>
+              <h2>Add a planting record</h2>
+            </div>
+
+            <form id="plantingForm" class="planner-form">
+              <label>
+                <span>Crop</span>
+                <select id="plantingCrop" data-crops required></select>
+              </label>
+              <label>
+                <span>County</span>
+                <select id="plantingCounty" data-counties required></select>
+              </label>
+              <label>
+                <span>Planting date</span>
+                <input type="date" id="plantingDate" required />
+              </label>
+              <label>
+                <span>Farm size (acres)</span>
+                <input type="number" id="farmSize" min="0.25" step="0.25" required />
+              </label>
+              <label>
+                <span>Notes</span>
+                <input type="text" id="plantingNotes" placeholder="Season, seed type, or field notes" />
+              </label>
+              <button type="submit" class="primary-button full-width">Save planting and forecast</button>
+            </form>
+            <p class="status-note" id="latestRecord">No planting record saved yet.</p>
+          </article>
+        </section>
+
+        <section class="dashboard-layout" id="insights">
+          <article class="glass-card chart-card">
+            <div class="section-title">
+              <p>Forecast</p>
+              <h2>Harvest and selling advice</h2>
+            </div>
+            <div class="summary-stack">
+              <div>
+                <span class="label">Harvest window</span>
+                <h3 id="harvestWindow">No forecast yet</h3>
+              </div>
+              <div>
+                <span class="label">Best week to sell</span>
+                <h3 id="sellWindow">-</h3>
+              </div>
+              <div>
+                <span class="label">Recommendation</span>
+                <p id="recommendationText">Save a planting record to generate a real forecast.</p>
+              </div>
+              <div class="insight-strip">
+                <article>
+                  <span>Expected yield</span>
+                  <strong id="yieldProjection">-</strong>
+                </article>
+                <article>
+                  <span>Expected revenue</span>
+                  <strong id="revenueProjection">-</strong>
+                </article>
+              </div>
+            </div>
+            <div class="chart-wrap">
+              <svg id="priceChart" viewBox="0 0 720 280" aria-label="Price trend chart"></svg>
+            </div>
+            <div class="chart-legend">
+              <span><i class="legend-dot current"></i> Expected prices</span>
+              <span><i class="legend-dot peak"></i> Best selling point</span>
+            </div>
+          </article>
+
+          <article class="glass-card weather-card">
+            <div class="section-title">
+              <p>Weather</p>
+              <h2>Field readiness</h2>
+            </div>
+            <div class="weather-meter">
+              <div class="meter-ring">
+                <div class="meter-inner">
+                  <strong id="weatherScore">--</strong>
+                  <span>Field readiness</span>
+                </div>
+              </div>
+              <div class="weather-copy">
+                <p id="weatherNarrative">Weather details will appear here after a forecast is generated.</p>
+                <div class="weather-pills" id="weatherPills"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card sms-card">
+            <div class="section-title">
+              <p>SMS alert</p>
+              <h2>Message preview for farmers</h2>
+            </div>
+            <div class="sms-phone">
+              <div class="sms-notch"></div>
+              <div class="sms-screen">
+                <p class="sms-meta">Africa's Talking ready</p>
+                <p id="smsPreview">SMS preview will appear here after login and forecast generation.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card highlights-card">
+            <div class="section-title">
+              <p>Records</p>
+              <h2>Historical planting records</h2>
+            </div>
+            <div class="table-wrap">
+              <table class="records-table">
+                <thead>
+                  <tr>
+                    <th>Crop</th>
+                    <th>County</th>
+                    <th>Planting date</th>
+                    <th>Farm size</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody id="plantingTableBody">
+                  <tr>
+                    <td colspan="5">No planting records yet.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button type="button" id="sendSmsButton" class="secondary-button full-width">Send SMS alert</button>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./scripts/client.js"></script>
+  </body>
+</html>
