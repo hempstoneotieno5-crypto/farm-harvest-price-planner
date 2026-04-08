@@ -1,0 +1,74 @@
+[
+  {
+    "id": "siaya",
+    "name": "Siaya",
+    "region": "Nyanza",
+    "lat": 0.0615,
+    "lon": 34.2881,
+    "elevationMeters": 1140,
+    "rainfallBand": "medium-high",
+    "temperatureBand": "warm",
+    "soilType": "loam",
+    "marketAccessScore": 0.73
+  },
+  {
+    "id": "kisumu",
+    "name": "Kisumu",
+    "region": "Nyanza",
+    "lat": -0.0917,
+    "lon": 34.768,
+    "elevationMeters": 1131,
+    "rainfallBand": "medium",
+    "temperatureBand": "warm",
+    "soilType": "clay-loam",
+    "marketAccessScore": 0.84
+  },
+  {
+    "id": "homa-bay",
+    "name": "Homa Bay",
+    "region": "Nyanza",
+    "lat": -0.5273,
+    "lon": 34.4571,
+    "elevationMeters": 1210,
+    "rainfallBand": "medium",
+    "temperatureBand": "warm",
+    "soilType": "sandy-loam",
+    "marketAccessScore": 0.68
+  },
+  {
+    "id": "nakuru",
+    "name": "Nakuru",
+    "region": "Rift Valley",
+    "lat": -0.3031,
+    "lon": 36.08,
+    "elevationMeters": 1859,
+    "rainfallBand": "high",
+    "temperatureBand": "cool",
+    "soilType": "volcanic-loam",
+    "marketAccessScore": 0.89
+  },
+  {
+    "id": "uasin-gishu",
+    "name": "Uasin Gishu",
+    "region": "Rift Valley",
+    "lat": 0.5143,
+    "lon": 35.2698,
+    "elevationMeters": 2100,
+    "rainfallBand": "high",
+    "temperatureBand": "cool",
+    "soilType": "deep-loam",
+    "marketAccessScore": 0.86
+  },
+  {
+    "id": "machakos",
+    "name": "Machakos",
+    "region": "Eastern",
+    "lat": -1.5177,
+    "lon": 37.2634,
+    "elevationMeters": 1600,
+    "rainfallBand": "low-medium",
+    "temperatureBand": "warm",
+    "soilType": "sandy-clay",
+    "marketAccessScore": 0.79
+  }
+]
