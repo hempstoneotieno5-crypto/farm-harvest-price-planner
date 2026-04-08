@@ -1,0 +1,62 @@
+[
+  {
+    "id": "maize",
+    "name": "Maize",
+    "category": "cereal",
+    "unit": "90kg bag",
+    "maturityDays": 120,
+    "harvestWindowDays": 12,
+    "yieldPerAcre": 18,
+    "rainfallNeed": "medium-high",
+    "temperaturePreference": "moderate",
+    "storageLossRisk": "medium"
+  },
+  {
+    "id": "beans",
+    "name": "Beans",
+    "category": "legume",
+    "unit": "90kg bag",
+    "maturityDays": 90,
+    "harvestWindowDays": 10,
+    "yieldPerAcre": 9,
+    "rainfallNeed": "medium",
+    "temperaturePreference": "warm",
+    "storageLossRisk": "low"
+  },
+  {
+    "id": "tomatoes",
+    "name": "Tomatoes",
+    "category": "horticulture",
+    "unit": "crate",
+    "maturityDays": 85,
+    "harvestWindowDays": 8,
+    "yieldPerAcre": 145,
+    "rainfallNeed": "medium",
+    "temperaturePreference": "warm",
+    "storageLossRisk": "high"
+  },
+  {
+    "id": "onions",
+    "name": "Onions",
+    "category": "horticulture",
+    "unit": "net bag",
+    "maturityDays": 110,
+    "harvestWindowDays": 10,
+    "yieldPerAcre": 80,
+    "rainfallNeed": "medium",
+    "temperaturePreference": "moderate",
+    "storageLossRisk": "medium"
+  },
+  {
+    "id": "sorghum",
+    "name": "Sorghum",
+    "category": "cereal",
+    "unit": "90kg bag",
+    "maturityDays": 115,
+    "harvestWindowDays": 14,
+    "yieldPerAcre": 14,
+    "rainfallNeed": "low-medium",
+    "temperaturePreference": "warm",
+    "storageLossRisk": "low"
+  }
+]
