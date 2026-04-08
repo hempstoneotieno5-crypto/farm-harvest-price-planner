@@ -1,0 +1,110 @@
+[
+  {
+    "countyId": "siaya",
+    "cropId": "maize",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 3550 },
+      { "month": "2025-09", "averagePrice": 3620 },
+      { "month": "2025-10", "averagePrice": 3780 },
+      { "month": "2025-11", "averagePrice": 3910 },
+      { "month": "2025-12", "averagePrice": 4050 },
+      { "month": "2026-01", "averagePrice": 4170 }
+    ]
+  },
+  {
+    "countyId": "kisumu",
+    "cropId": "maize",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 3680 },
+      { "month": "2025-09", "averagePrice": 3720 },
+      { "month": "2025-10", "averagePrice": 3870 },
+      { "month": "2025-11", "averagePrice": 4020 },
+      { "month": "2025-12", "averagePrice": 4180 },
+      { "month": "2026-01", "averagePrice": 4290 }
+    ]
+  },
+  {
+    "countyId": "nakuru",
+    "cropId": "maize",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 3450 },
+      { "month": "2025-09", "averagePrice": 3510 },
+      { "month": "2025-10", "averagePrice": 3660 },
+      { "month": "2025-11", "averagePrice": 3780 },
+      { "month": "2025-12", "averagePrice": 3890 },
+      { "month": "2026-01", "averagePrice": 3980 }
+    ]
+  },
+  {
+    "countyId": "siaya",
+    "cropId": "beans",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 6900 },
+      { "month": "2025-09", "averagePrice": 7100 },
+      { "month": "2025-10", "averagePrice": 7340 },
+      { "month": "2025-11", "averagePrice": 7480 },
+      { "month": "2025-12", "averagePrice": 7590 },
+      { "month": "2026-01", "averagePrice": 7720 }
+    ]
+  },
+  {
+    "countyId": "machakos",
+    "cropId": "beans",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 7040 },
+      { "month": "2025-09", "averagePrice": 7190 },
+      { "month": "2025-10", "averagePrice": 7380 },
+      { "month": "2025-11", "averagePrice": 7530 },
+      { "month": "2025-12", "averagePrice": 7670 },
+      { "month": "2026-01", "averagePrice": 7810 }
+    ]
+  },
+  {
+    "countyId": "kisumu",
+    "cropId": "tomatoes",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 3450 },
+      { "month": "2025-09", "averagePrice": 3780 },
+      { "month": "2025-10", "averagePrice": 4120 },
+      { "month": "2025-11", "averagePrice": 4360 },
+      { "month": "2025-12", "averagePrice": 4210 },
+      { "month": "2026-01", "averagePrice": 3980 }
+    ]
+  },
+  {
+    "countyId": "homa-bay",
+    "cropId": "tomatoes",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 3320 },
+      { "month": "2025-09", "averagePrice": 3650 },
+      { "month": "2025-10", "averagePrice": 4010 },
+      { "month": "2025-11", "averagePrice": 4230 },
+      { "month": "2025-12", "averagePrice": 4090 },
+      { "month": "2026-01", "averagePrice": 3860 }
+    ]
+  },
+  {
+    "countyId": "nakuru",
+    "cropId": "onions",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 2520 },
+      { "month": "2025-09", "averagePrice": 2610 },
+      { "month": "2025-10", "averagePrice": 2780 },
+      { "month": "2025-11", "averagePrice": 2940 },
+      { "month": "2025-12", "averagePrice": 3060 },
+      { "month": "2026-01", "averagePrice": 3190 }
+    ]
+  },
+  {
+    "countyId": "uasin-gishu",
+    "cropId": "sorghum",
+    "prices": [
+      { "month": "2025-08", "averagePrice": 4320 },
+      { "month": "2025-09", "averagePrice": 4410 },
+      { "month": "2025-10", "averagePrice": 4560 },
+      { "month": "2025-11", "averagePrice": 4690 },
+      { "month": "2025-12", "averagePrice": 4780 },
+      { "month": "2026-01", "averagePrice": 4870 }
+    ]
+  }
+]
